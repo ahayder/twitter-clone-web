@@ -15,7 +15,7 @@ const Routes: React.FC<RoutesProps> = (): JSX.Element => {
             <Route exact path="/">
                 <Redirect exact to="/home" />
             </Route>
-            <PrivateRoute path="/home" component={Home} />
+            <Route path="/home" component={Home} />
             <Route path="/:username" exact component={ProfileWrapper} />
             <Route path="/login" exact component={Login} />
             <Route path="/register" exact component={Register} />
